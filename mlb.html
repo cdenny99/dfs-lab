@@ -6,43 +6,59 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f4f6f8;
+            background: #0b1120;
+            color: #e5e7eb;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: #111827;
+            background: linear-gradient(135deg, #111827, #1e3a8a);
             color: white;
-            padding: 25px;
+            padding: 35px;
             text-align: center;
+            border-bottom: 3px solid #22c55e;
         }
 
         nav {
-            background: #1f2937;
-            padding: 12px;
+            background: #020617;
+            padding: 14px;
             text-align: center;
+            border-bottom: 1px solid #1f2937;
         }
 
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: #e5e7eb;
+            margin: 0 14px;
             text-decoration: none;
             font-weight: bold;
         }
 
+        nav a:hover {
+            color: #22c55e;
+        }
+
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
         .card {
-            background: white;
+            background: #111827;
             padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,.08);
+            margin-bottom: 22px;
+            border-radius: 14px;
+            border: 1px solid #1f2937;
+            box-shadow: 0 4px 18px rgba(0,0,0,.35);
+        }
+
+        h2 {
+            color: #93c5fd;
+        }
+
+        ul {
+            line-height: 1.8;
         }
 
         .button {
@@ -55,8 +71,18 @@
             font-weight: bold;
         }
 
-        ul {
-            line-height: 1.8;
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #1e293b;
+            color: #facc15;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -65,7 +91,7 @@
 
 <header>
     <h1>⚾ MLB DFS</h1>
-    <p>DraftKings MLB Optimization Suite</p>
+    <p>DraftKings MLB Builder and Trimmer</p>
 </header>
 
 <nav>
@@ -81,23 +107,19 @@
 <div class="container">
 
     <div class="card">
-        <h2>MLB Builder & Trimmer</h2>
-
-        <p>
-            Current production version of the MLB lineup builder and
-            portfolio trimmer.
-        </p>
+        <h2>MLB Builder / Trimmer</h2>
+        <p><span class="tag">Production</span></p>
+        <p>Current MLB lineup builder and portfolio trimmer for DraftKings slates.</p>
 
         <a class="button"
            href="https://colab.research.google.com/drive/1Y85chnQpKohSS92qjMcXzRGFl3WJACoo"
            target="_blank">
-           Launch Builder
+           Launch MLB Tool
         </a>
     </div>
 
     <div class="card">
         <h2>Inputs Required</h2>
-
         <ul>
             <li>DraftKings Slate CSV</li>
         </ul>
@@ -105,22 +127,18 @@
 
     <div class="card">
         <h2>Current Features</h2>
-
         <ul>
-            <li>5-man stack generation</li>
-            <li>No hitters vs opposing SP</li>
-            <li>Name(ID) export format</li>
-            <li>Exposure reporting</li>
+            <li>Stacked DraftKings MLB lineup generation</li>
             <li>Portfolio trimming</li>
+            <li>Name(ID) export format</li>
+            <li>No hitters against opposing starting pitchers</li>
+            <li>Exposure reporting</li>
         </ul>
     </div>
 
     <div class="card">
         <h2>Version</h2>
-
-        <p>
-            MLB Builder v2026.06
-        </p>
+        <p><strong>v2026.06</strong> — Current production version</p>
     </div>
 
 </div>
