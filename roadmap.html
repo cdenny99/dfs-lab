@@ -6,29 +6,36 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f4f6f8;
+            background: #0b1120;
+            color: #e5e7eb;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: #111827;
+            background: linear-gradient(135deg, #111827, #1e3a8a);
             color: white;
-            padding: 25px;
+            padding: 35px;
             text-align: center;
+            border-bottom: 3px solid #22c55e;
         }
 
         nav {
-            background: #1f2937;
-            padding: 12px;
+            background: #020617;
+            padding: 14px;
             text-align: center;
+            border-bottom: 1px solid #1f2937;
         }
 
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: #e5e7eb;
+            margin: 0 14px;
             text-decoration: none;
             font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #22c55e;
         }
 
         .container {
@@ -38,15 +45,40 @@
         }
 
         .card {
-            background: white;
+            background: #111827;
             padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,.08);
+            margin-bottom: 22px;
+            border-radius: 14px;
+            border: 1px solid #1f2937;
+            box-shadow: 0 4px 18px rgba(0,0,0,.35);
+        }
+
+        h2 {
+            color: #93c5fd;
+            margin-top: 0;
         }
 
         ul {
             line-height: 1.8;
+        }
+
+        .priority {
+            display: inline-block;
+            background: #1e293b;
+            color: #facc15;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .high {
+            color: #22c55e;
+        }
+
+        .medium {
+            color: #facc15;
         }
     </style>
 </head>
@@ -71,61 +103,81 @@
 <div class="container">
 
     <div class="card">
+        <span class="priority">HIGH PRIORITY</span>
+
         <h2>⚾ MLB</h2>
+
         <ul>
             <li>Build hundreds of stacked lineups in under 5 minutes.</li>
-            <li>Add home run probability data for one-off hitters.</li>
-            <li>Redesign lineup trimmer with portfolio diversity concepts.</li>
+            <li>Add home-run probability metrics for one-off hitters.</li>
+            <li>Redesign lineup trimmer using portfolio diversity concepts.</li>
             <li>Cap player leverage around 18–20%.</li>
         </ul>
     </div>
 
     <div class="card">
-        <h2>⚽ Soccer</h2>
-        <ul>
-            <li>Move optimizer from Colab into a direct web app eventually.</li>
-            <li>Add direct CSV uploads through the website.</li>
-            <li>Improve ownership estimation model.</li>
-            <li>Continue refining 20-max and single-entry trimming logic.</li>
-        </ul>
-    </div>
+        <span class="priority">HIGH PRIORITY</span>
 
-    <div class="card">
         <h2>🏒 NHL</h2>
+
         <ul>
-            <li>Add current NHL optimizer to the website.</li>
-            <li>Add NHL Showdown Builder.</li>
-            <li>Add NHL Lineup Trimmer.</li>
-            <li>Improve portfolio diversification and stack selection tools.</li>
+            <li>Add NHL Optimizer page.</li>
+            <li>Add NHL Showdown Builder page.</li>
+            <li>Add NHL Lineup Trimmer page.</li>
+            <li>Improve portfolio diversification tools.</li>
+            <li>Add showdown strategy documentation.</li>
         </ul>
     </div>
 
     <div class="card">
-        <h2>🏀 NBA</h2>
+        <span class="priority">MEDIUM PRIORITY</span>
+
+        <h2>⚽ Soccer</h2>
+
         <ul>
-            <li>Add NBA main optimizer.</li>
+            <li>Move optimizer from Colab to direct web app eventually.</li>
+            <li>Add direct CSV uploads through website.</li>
+            <li>Improve ownership estimation model.</li>
+            <li>Continue refining SE and 20-max trimming logic.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <span class="priority">MEDIUM PRIORITY</span>
+
+        <h2>🏀 NBA</h2>
+
+        <ul>
+            <li>Add main NBA optimizer.</li>
             <li>Add NBA late swap optimizer.</li>
             <li>Add NBA showdown tools.</li>
-            <li>Track late-swap decisions and projection-change triggers.</li>
+            <li>Add late-swap decision documentation.</li>
         </ul>
     </div>
 
     <div class="card">
+        <span class="priority">MEDIUM PRIORITY</span>
+
         <h2>🏈 NFL</h2>
+
         <ul>
             <li>Add NFL late swap workflow.</li>
             <li>Add NFL lineup trimmer.</li>
-            <li>Document stacking and bring-back rules.</li>
+            <li>Add stacking and bring-back documentation.</li>
         </ul>
     </div>
 
     <div class="card">
+        <span class="priority">FUTURE PROJECT</span>
+
         <h2>📊 DFS Tracker</h2>
+
         <ul>
-            <li>Add contest history import.</li>
+            <li>Import contest history.</li>
             <li>Track ROI by sport.</li>
             <li>Track ROI by contest type.</li>
             <li>Track bankroll growth over time.</li>
+            <li>Create dashboard reporting.</li>
         </ul>
     </div>
 
